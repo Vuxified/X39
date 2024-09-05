@@ -1,0 +1,78 @@
+/* Testimonials.css */
+.testimonials-wrapper {
+  padding: 40px 20px;
+  background: #ffffff; /* White background for contrast */
+  color: #333; /* Dark text color */
+  min-height: 100vh;
+}
+
+.testimonials-heading {
+  font-size: 2.5rem;
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); /* Three columns */
+  gap: 30px; /* Space between the columns */
+  padding: 0 20px;
+}
+
+.testimonial-card {
+  background: rgb(63, 137, 234); /* Vibrant blue background */
+  padding: 20px; /* Adjust padding for a compact look */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Strong shadow for depth */
+  text-align: center;
+  color: #ffffff; /* White text for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure card takes full height */
+}
+
+.video-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  margin-bottom: 15px; /* Space below the video */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Rounded corners for the video */
+}
+
+.testimonial-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff; /* Keep titles white for contrast */
+}
+
+.testimonial-card strong {
+  color: #ffa500; /* Bright orange for author names */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .stars {
+  color: gold; /* Gold stars for a classic look */
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.testimonial-card .stars svg {
+  margin-right: 2px; /* Spacing between stars */
+}
