@@ -40,7 +40,7 @@
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%; /* Start the slide from outside the button */
