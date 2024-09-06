@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import effectiveImage from "../images/96effective.jpg";
+import benefitsBlue from "../images/benefitsblue2.jpg";
 import benefitsX39 from "../images/benefitsX39.jpg";
 import infoX39 from "../images/infoX39.jpg";
-import benefitsBlue from "../images/benefitsblue2.jpg";
-import effectiveImage from "../images/96effective.jpg";
 import phototherapy from "../images/phototherapy.jpg";
 import Button from "./Button";
 import "./Homepage.css";
@@ -40,45 +40,47 @@ function Homepage() {
   }, [images.length]);
 
   return (
-    <div>
+    <div className="main-container">
       <div className="text-container">
-        <h1 className="title">
-          <i className="fas fa-bolt"></i> <span>The</span> <span>Power</span>{" "}
-          <span>of</span> <span>X39</span>
-        </h1>
-        <div className="content-wrapper">
-          <div className="text-content">
-            <p className="X39-info">
-              <b>X39</b> is a revolutionary wearable technology designed to
-              activate your body's natural healing processes, promoting faster
-              recovery, improved wellness, and a renewed sense of vitality.
-            </p>
-            <div className="button-wrapper">
-              <Button
-                text="Buy Now"
-                link="https://lifewave.com/kristinasimms"
-                variant="primary"
-              />
-              <Button
-                text="Learn More"
-                link="https://thisisitinfo.com/"
-                variant="secondary"
-              />
+        <div className="home-content">
+          <h1 className="title">
+            <i className="fas fa-bolt"></i> <span>The</span> <span>Power</span>{" "}
+            <span>of</span> <span>X39</span>
+          </h1>
+          <div className="content-wrapper">
+            <div className="text-content">
+              <p className="X39-info">
+                <b>X39</b> is a revolutionary wearable technology designed to
+                activate your body&lsquo;s natural healing processes, promoting
+                faster recovery, improved wellness, and a renewed sense of
+                vitality.
+              </p>
+              <div className="button-wrapper">
+                <Button
+                  text="Buy Now"
+                  link="https://lifewave.com/kristinasimms"
+                  variant="primary"
+                />
+                <Button
+                  text="Learn More"
+                  link="https://thisisitinfo.com/"
+                  variant="secondary"
+                />
+              </div>
             </div>
-
-          </div>
-          <div className="image-container">
-            <img
-              src={images[currentImageIndex]}
-              alt="Benefits of X39"
-              className={`fade ${fade ? "fade-in" : "fade-out"}`}
-            />
-            <p 
-              className="image-text fadeUp" 
-              key={currentImageIndex} /* Force re-render with key */
-            >
-              {imageTexts[currentImageIndex]}
-            </p>
+            <div className="image-container">
+              <img
+                src={images[currentImageIndex]}
+                alt="Benefits of X39"
+                className={`fade ${fade ? "fade-in" : "fade-out"}`}
+              />
+              <p
+                className="image-text fadeUp"
+                key={currentImageIndex} /* Force re-render with key */
+              >
+                {imageTexts[currentImageIndex]}
+              </p>
+            </div>
           </div>
         </div>
       </div>
