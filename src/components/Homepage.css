@@ -48,6 +48,24 @@
   pointer-events: none;
 }
 
+.interactive {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      var(--color-interactive) 0%,
+      rgba(255, 255, 255, 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
 /* Main Container */
 .main-container {
   display: flex;
@@ -120,7 +138,7 @@
 
 .image-container {
   flex: 1;
-  margin-top: 10px;
+  margin-top: 20px;
   max-width: 45%;
   background: transparent;
   display: flex;

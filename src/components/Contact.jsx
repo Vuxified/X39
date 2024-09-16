@@ -110,26 +110,26 @@ const ContactPage = () => {
             <div className="contact-info">
               <div className="info-item">
                 <HiOutlineEnvelope className="icon" />
-                <span>contact@example.com</span>
+                <span>Nesteggsimms@gmail.com</span>
               </div>
               <div className="info-item">
                 <IoCallOutline className="icon" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (502) 376-1381</span>
               </div>
             </div>
             <div className="social-links">
               <h3>Follow us</h3>
               <div className="social-icons">
-                <a href="#" aria-label="Facebook">
+                <a href="https://www.facebook.com/kristina.simms.5203" aria-label="Facebook" target="_blank">
                   <FaFacebookF className="social-icon" />
                 </a>
-                <a href="#" aria-label="Twitter">
+                {/* <a href="#" aria-label="Twitter">
                   <FaXTwitter className="social-icon" />
-                </a>
-                <a href="#" aria-label="TikTok">
+                </a> */}
+                <a href="https://www.tiktok.com/@simmspatched" aria-label="TikTok" target="_blank">
                   <FaTiktok className="social-icon" />
                 </a>
-                <a href="#" aria-label="Instagram">
+                <a href="https://www.instagram.com/kristina_77simms/" aria-label="Instagram" target="_blank">
                   <FaInstagram className="social-icon" />
                 </a>
               </div>
