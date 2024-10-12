@@ -58,7 +58,7 @@ function Homepage() {
               <div className="button-wrapper">
                 <Button
                   text="Buy Now"
-                  link="https://lifewave.com/kristinasimms"
+                  link="https://lifewave.com/kristinasimms/enrollment/enrollerselection"
                   variant="primary"
                 />
                 <Button
