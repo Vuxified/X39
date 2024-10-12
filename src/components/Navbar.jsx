@@ -46,7 +46,7 @@ function Navbar() {
           </li> */}
           <li className="nav-item">
             <Link
-              to="https://lifewave.com/kristinasimms"
+              to="https://lifewave.com/kristinasimms/enrollment/enrollerselection"
               target="_blank"
               className="nav-links"
               onClick={closeMobileMenu}
