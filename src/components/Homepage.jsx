@@ -1,3 +1,4 @@
+// Homepage.jsx
 import { useEffect, useState } from "react";
 import effectiveImage from "../images/96effective.jpg";
 import benefitsBlue from "../images/benefitsblue2.jpg";
@@ -33,8 +34,8 @@ function Homepage() {
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setFade(true);
-      }, 500); // Duration of fade out transition
-    }, 5000); // Change image every 3 seconds
+      }, 500); // Duration of fade-out transition
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(intervalId);
   }, [images.length]);
@@ -43,17 +44,17 @@ function Homepage() {
     <div className="main-container">
       <div className="text-container">
         <div className="home-content">
-          <h1 className="title">
-            <i className="fas fa-bolt"></i> <span>The</span> <span>Power</span>{" "}
-            <span>of</span> <span>X39</span>
-          </h1>
           <div className="content-wrapper">
             <div className="text-content">
+              <h1 className="highlighted-title">
+                X39 is revolutionary wearable technology
+              </h1>
               <p className="X39-info">
-                <b>X39</b> is a revolutionary wearable technology designed to
-                activate your body&lsquo;s natural healing processes, promoting
-                faster recovery, improved wellness, and a renewed sense of
-                vitality.
+                * X39 per 30-day supply!<br />
+                * Hit the “Buy Now”<br />
+                * Recommended 90-day use.<br />
+                * Select Core and get all 90 days with a money-back guarantee!<br />
+                * Or select “Preferred Customer” and receive a 30-day supply with a 30-day money-back guarantee.
               </p>
               <div className="button-wrapper">
                 <Button
