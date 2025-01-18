@@ -1,11 +1,9 @@
-// Homepage.jsx
 import { useEffect, useState } from "react";
 import effectiveImage from "../images/96effective.jpg";
 import benefitsBlue from "../images/benefitsblue2.jpg";
 import benefitsX39 from "../images/benefitsX39.jpg";
 import infoX39 from "../images/infoX39.jpg";
 import phototherapy from "../images/phototherapy.jpg";
-import Button from "./Button";
 import "./Homepage.css";
 
 function Homepage() {
@@ -42,78 +40,65 @@ function Homepage() {
 
   return (
     <div className="main-container">
+      {/* Hero Section */}
       <div className="text-container">
-        <div className="home-content">
-          <div className="content-wrapper">
-            <div className="text-content">
-              <h1 className="highlighted-title">
-                X39 is revolutionary wearable technology
-              </h1>
-              <p className="X39-info">
-                * X39 per 30-day supply!<br />
-                * Hit the “Buy Now”<br />
-                * Recommended 90-day use.<br />
-                * Select Core and get all 90 days with a money-back guarantee!<br />
-                * Or select “Preferred Customer” and receive a 30-day supply with a 30-day money-back guarantee.
-              </p>
-              <div className="button-wrapper">
-                <Button
-                  text="Buy Now"
-                  link="https://lifewave.com/kristinasimms/enrollment/enrollerselection"
-                  variant="primary"
-                />
-                <Button
-                  text="Learn More"
-                  link="https://thisisitinfo.com/"
-                  variant="secondary"
-                />
-              </div>
-            </div>
-            <div className="image-container">
-              <img
-                src={images[currentImageIndex]}
-                alt="Benefits of X39"
-                className={`fade ${fade ? "fade-in" : "fade-out"}`}
-              />
-              <p
-                className="image-text fadeUp"
-                key={currentImageIndex} /* Force re-render with key */
-              >
-                {imageTexts[currentImageIndex]}
-              </p>
-            </div>
-          </div>
+        <h1 className="highlighted-title">X39 Revolutionary Wearable Technology</h1>
+        <p className="X39-info">
+          Transform your health with X39:
+            <ul>
+              <li>Experience the X39: A revolutionary 30-day supply!</li>
+              <li>Click "Buy Now" to start your journey to better health.</li>
+              <li>For optimal results, a 90-day usage is recommended.</li>
+              <li>
+                Choose "Core" for a complete 90-day plan with a money-back guarantee.
+              </li>
+              <li>
+                Prefer flexibility? Select "Preferred Customer" to enjoy a 30-day supply
+                with the same 30-day money-back assurance.
+              </li>
+            </ul>
+        </p>
+
+        <div className="button-wrapper">
+          <a
+            href="https://lifewave.com/kristinasimms/enrollment/enrollerselection"
+            className="button primary"
+          >
+            <span>Buy Now</span>
+          </a>
+          <a href="https://thisisitinfo.com/" className="button secondary">
+            <span>Learn More</span>
+          </a>
+        </div>
+      </div>
+<div className="video-section">
+        <h2 className="video-title">Watch the Science Behind X39</h2>
+        <div className="video-wrapper">
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.youtube.com/embed/FgOGhc3sI7A"
+            title="X39 Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+      {/* Image Carousel Section */}
+      <div className="content-wrapper">
+        <div className="image-container">
+          <img
+            src={images[currentImageIndex]}
+            alt="Benefits of X39"
+            className={`fade ${fade ? "fade-in" : "fade-out"}`}
+          />
+          <p className="image-text">{imageTexts[currentImageIndex]}</p>
         </div>
       </div>
 
-      <div className="gradient-bg">
-        <svg xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="goo">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="10"
-                result="blur"
-              />
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                result="goo"
-              />
-              <feBlend in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-        <div className="gradients-container">
-          <div className="g1"></div>
-          <div className="g2"></div>
-          <div className="g3"></div>
-          <div className="g4"></div>
-          <div className="g5"></div>
-          <div className="interactive"></div>
-        </div>
-      </div>
+
+     
     </div>
   );
 }
