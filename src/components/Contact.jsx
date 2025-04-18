@@ -110,11 +110,11 @@ const ContactPage = () => {
             <div className="contact-info">
               <div className="info-item">
                 <HiOutlineEnvelope className="icon" />
-                <span>jeane.matthews@yahoo.com</span>
+                <span>Kristinasimms01@gmail.com</span>
               </div>
               <div className="info-item">
                 <IoCallOutline className="icon" />
-                <span>+1 (502) 550-9688</span>
+                <span>+1 (502) 376-1381</span>
               </div>
             </div>
             <div className="social-links">
